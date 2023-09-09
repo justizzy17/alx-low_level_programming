@@ -1,22 +1,26 @@
 #include <stdio.h>
 
-/*
+/**
  * main -  prints all possible combinations of two two-digit numbers.
  * Return: 0 always
  */
 
-int min(void)
+int main(void)
 {
 	int n, m;
 
-	for (n = 0; n < 10; n++)
+	for (n = 0; n < 100; n++)
 	{
-		for (m = 0; m < 10; m++)
+		for (m = n + 1; m < 100; m++)
 		{
-			putchar('0' + n);
-			putchar('0' + m);
+			putchar('0' + (n / 10));
+			putchar('0' + (n % 10));
+			putchar(' ');
 
-			if (if n < m || m < n)
+			putchar('0' + (m / 10));
+			putchar('0' + (m % 10));
+
+			if (n != 98 || m != 99)
 			{
 				putchar(',');
 				putchar(' ');
