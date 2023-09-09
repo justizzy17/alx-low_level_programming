@@ -6,10 +6,10 @@
  * Return: 0 always
  */
 
-int main (void)
+int main(void)
 {
-	char loweCaseLetter ;
-	char upperCaseLetter ;
+	char loweCaseLetter;
+	char upperCaseLetter;
 
 	for (loweCaseLetter = 'a'; loweCaseLetter <= 'z'; loweCaseLetter++)
 		putchar (loweCaseLetter);

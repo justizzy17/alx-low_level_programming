@@ -5,11 +5,12 @@
  * Return: 0 always
  */
 
-int main (void)
+int main(void)
 {
 	char lowerCaseLetter = 'z';
 
-	while (lowerCaseLetter >= 'a'){
+	while (lowerCaseLetter >= 'a')
+	{
 		putchar(lowerCaseLetter);
 	lowerCaswLetter--;
 	}

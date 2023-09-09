@@ -4,11 +4,11 @@
  * Return: 0 always
  */
 
-int main (void)
+int main(void)
 {
 	char lowerCaseAlphabet;
 
-	for(lowerCaseAlphabet = 'a'; lowerCaseAlphabet <= 'z'; lowerCaseAlphabet++)
+	for (lowerCaseAlphabet = 'a'; lowerCaseAlphabet <= 'z'; lowerCaseAlphabet++)
 	putchar (lowerCaseAlphabet);
 	putchar('\n');
 
