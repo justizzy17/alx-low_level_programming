@@ -20,6 +20,6 @@ int main(void)
 	else if (n == a)
 		printf("%d is zero\n", n);
 	else
-		printf("%d is negaative\n", n);
+		printf("%d is negative\n", n);
 	return (0);
 }
