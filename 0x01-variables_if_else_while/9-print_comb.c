@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main -  main - prints all possible combinations of single-digit numbers
- * ReturN: 0 always
+ * main - prints all possible combinations of single-digit numbers
+ * Return: 0 always
  */
 
 int main(void)
@@ -19,7 +19,6 @@ int main(void)
 		putchar(' ');
 		}
 		num++;
-	
 	}
 	putchar('\n');
 	return (0);
