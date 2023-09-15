@@ -5,7 +5,7 @@
  * Return: 0 always
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	char small_letter;
 	int i;
