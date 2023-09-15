@@ -7,9 +7,8 @@
  * Return: The absolute value of the integer.
  */
 
-int _abs(int)
+int _abs(int c)
 {
-	int c;
 
 	if (c < 0)
 		return (-c);
