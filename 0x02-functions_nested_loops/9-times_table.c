@@ -13,11 +13,19 @@ void times_table(void)
 	{
 		for (b = 0; b < 10; b++)
 		{
-			if (calc < 10)
-			{
+
 			calc = a * b;
+			if (b == 0)
+			{
 			_putchar('0' + calc);
 			}
+
+
+			if (calc < 10)
+			{
+			_putchar('0' + calc);
+			}
+
 			else if (calc >= 10)
 			{
 			_putchar('0' + (calc / 10));
