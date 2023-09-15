@@ -16,12 +16,12 @@ void times_table(void)
 			if (calc < 10)
 			{
 			calc = a * b;
-			_putchar('0' + (calc % 10);
+			_putchar('0' + (calc % 10));
 			}
 			else
 			{
-			_putchar('0' + (calc / 10);
-			_putchar('0' + (calc % 10);
+			_putchar('0' + (calc / 10));
+			_putchar('0' + (calc % 10));
 			}
 
 			if (b != 9)
