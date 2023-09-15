@@ -20,22 +20,18 @@ void times_table(void)
 			_putchar('0' + calc);
 			}
 
-			else 
+			if (calc < 10 && b != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
-
-				if (calc < 10)
-					_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + calc);
 			}
 
-			if (calc < 10)
+			else if (calc >= 10)
 			{
-			_putchar('0' + calc);
-			}
-
-			else
-			{
+			_putchar(',');
+			_putchar(' ');
 			_putchar('0' + (calc / 10));
 			_putchar('0' + (calc % 10));
 			}
