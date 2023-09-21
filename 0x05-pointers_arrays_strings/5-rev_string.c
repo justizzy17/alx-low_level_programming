@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	char *first_letter = s;
-	char last_letter = s;
+	char *last_letter = s;
 	char swap;
 
 
