@@ -2,7 +2,7 @@
 
 /**
  * puts_half - function that prints half of a string
- * @*str: pointing at the array of characters to be inputted
+ * @str: pointing at the array of characters to be inputted
  */
 
 void puts_half(char *str)
@@ -25,7 +25,7 @@ void puts_half(char *str)
 
 			 n = (length_of_the_string) / 2;
 
-		for (i = n; str[i] != ('\0'); i++)
+		for (i = n + 1; str[i] != ('\0'); i++)
 		{
 			_putchar(str[i]);
 		}
