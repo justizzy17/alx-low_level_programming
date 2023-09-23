@@ -8,23 +8,29 @@
 
 int _atoi(char *s)
 {
-	int outcome;
+	int index = 0;
+	unsigned int outcome = 0;
 	int sign = 1;
+	int has_a_digit = 0;
 
-	while (*s == ' ' || (*s >= 9 && *s <= 13))
-		s++;
-
-	if (*s == '-' || *s == '+')
+	while (s[index])
 	{
-		sign = (*s == '-') ? -1 : 1;
-		s++;
+		if (s[index] == 45)
+		{
+			sign *= -1;
+		}
+		while (s[index] >= 48 && s[index] <= 57)
+		{
+			has_a_digit = 1;
+			outcome = (outcome * 10) + (s[index] - '0');
+			index++;
+		}
+		if (has_a_digit == 1)
+		{
+			break;
+		}
+		index++;
 	}
-
-	while (*s >= '0' && *s <= '9')
-	{
-		 outcome = outcome * 10 + (*s - '0');
-	s++;
-	}
-
-	return (outcome * sign);
+	outcome *= sign;
+	return (outcome);
 }
