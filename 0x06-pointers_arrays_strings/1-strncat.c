@@ -19,6 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[index] = src[index];
 		index++;
+		n--;
 	}
 
 	dest[index] = '\0';
