@@ -8,22 +8,21 @@
  */
 char *_strdup(char *str)
 {
-	char *aaa;
-	int i, r = 0;
+	char *ptr_str;
+	int index;
+	int index2;
 
-	if (str == NULL)
+	index = 0;
+	while (str[index] != '\0')
+		index++;
+
+	ptr_str = malloc((sizeof(char) * index) + 1);
+
+	if (ptr_str == NULL)
 		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-		i++;
 
-	aaa = malloc(sizeof(char) * (i + 1));
+	for (index2 = 0; str[index2]; index2++)
+		ptr_str[index2] = str[index2];
 
-	if (aaa == NULL)
-		return (NULL);
-
-	for (r = 0; str[r]; r++)
-		aaa[r] = str[r];
-
-	return (aaa);
+	return (ptr_str);
 }
