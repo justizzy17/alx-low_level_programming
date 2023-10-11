@@ -24,8 +24,10 @@ char *_strdup(char *str)
 	if (ptr_str == NULL)
 		return (NULL);
 
-	for (index2 = 0; str[index2]; index2++)
+	for (index2 = 0; index2 < index; index2++)
 		ptr_str[index2] = str[index2];
+
+	ptr_str[index2] = '\0';
 
 	return (ptr_str);
 }
