@@ -12,6 +12,9 @@ char *_strdup(char *str)
 	int index;
 	int index2;
 
+	if (str == NULL)
+		return (NULL);
+
 	index = 0;
 	while (str[index] != '\0')
 		index++;
