@@ -11,7 +11,7 @@ void free_listint(listint_t *head)
 	listint_t *current, *temp;
 
 	if (head == NULL)
-		return ;
+		return;
 
 	current = head;
 
